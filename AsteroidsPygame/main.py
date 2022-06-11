@@ -204,10 +204,10 @@ class AlienBullet(object):
 def redrawGameWindow():
     win.blit(background, (0, 0))
     font = pygame.font.SysFont('arial',30)
-    livesText = font.render('Lives: ' + str(vida), 1, (255, 255, 255))
+    livesText = font.render('Vidas: ' + str(vida), 1, (255, 255, 255))
     playAgainText = font.render('Pressione Q para jogar novamente', 1, (255,255,255))
-    scoreText = font.render('Score: ' + str(pontos), 1, (255, 255, 255))
-    highScoreText = font.render('High Score: ' + str(Recorde), 1, (255, 255, 255))
+    scoreText = font.render('Pontos: ' + str(pontos), 1, (255, 255, 255))
+    highScoreText = font.render('Record: ' + str(Recorde), 1, (255, 255, 255))
 
     player.draw(win)
     for a in asteroids:
